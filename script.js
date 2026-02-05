@@ -178,6 +178,41 @@
   }
 
   // ============================================
+  // Scroll Hint for Mobile
+  // ============================================
+
+  function initScrollHint() {
+    // Only on mobile
+    if (window.innerWidth > 800) return;
+
+    const flowcharts = document.querySelectorAll('.flowchart');
+
+    if (!('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const overlay = entry.target.querySelector('.scroll-hint-overlay');
+          if (overlay && !overlay.classList.contains('shown')) {
+            overlay.classList.add('active', 'shown');
+            // Remove after animation completes
+            setTimeout(() => {
+              overlay.classList.remove('active');
+            }, 2500);
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    flowcharts.forEach(flowchart => {
+      observer.observe(flowchart);
+    });
+  }
+
+  // ============================================
   // Init
   // ============================================
 
@@ -185,6 +220,7 @@
     setLanguage(getSavedLanguage());
     initTooltipToggle();
     initFlowchartClick();
+    initScrollHint();
   }
 
   if (document.readyState === 'loading') {

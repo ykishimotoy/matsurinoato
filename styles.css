@@ -499,6 +499,52 @@ ul {
   animation: pulse 2s ease-in-out infinite;
 }
 
+/* Scroll hint overlay for mobile */
+.scroll-hint-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(245, 245, 245, 0.9);
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.scroll-hint-arrow {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--gray-500);
+}
+
+@media (max-width: 800px) {
+  .flow-diagram-svg {
+    position: relative;
+  }
+
+  .scroll-hint-overlay {
+    display: flex;
+  }
+
+  .scroll-hint-overlay.active {
+    animation: scrollHintFade 2.5s ease-in-out forwards;
+  }
+}
+
+@keyframes scrollHintFade {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  35% { opacity: 0.2; }
+  55% { opacity: 1; }
+  75% { opacity: 0.2; }
+  100% { opacity: 0; }
+}
+
 /* Result Detail Modal */
 .flow-result-detail {
   display: none;
