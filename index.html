@@ -75,16 +75,16 @@
             <!-- Q1 → 分岐線 -->
             <line x1="400" y1="80" x2="400" y2="95" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="400" y1="95" x2="200" y2="95" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="400" y1="95" x2="700" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="690" y2="95" stroke="#a3a3a3" stroke-width="2"/>
             <!-- YES label -->
             <ellipse cx="200" cy="115" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
             <text x="200" y="120" text-anchor="middle" class="flow-svg-label">YES</text>
             <line x1="200" y1="95" x2="200" y2="100" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="200" y1="130" x2="200" y2="150" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
-            <!-- NO label -->
-            <ellipse cx="700" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="700" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="700" y1="95" x2="700" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- NO label (ゆっくり眺める center=690) -->
+            <ellipse cx="690" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="690" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="690" y1="95" x2="690" y2="100" stroke="#a3a3a3" stroke-width="2"/>
 
             <!-- Q2 (YES側) -->
             <rect x="50" y="160" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
@@ -94,16 +94,16 @@
             <!-- Q2 → 分岐線 -->
             <line x1="200" y1="220" x2="200" y2="235" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="200" y1="235" x2="100" y2="235" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="200" y1="235" x2="500" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="480" y2="235" stroke="#a3a3a3" stroke-width="2"/>
             <!-- YES label -->
             <ellipse cx="100" cy="255" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
             <text x="100" y="260" text-anchor="middle" class="flow-svg-label">YES</text>
             <line x1="100" y1="235" x2="100" y2="240" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="100" y1="270" x2="100" y2="290" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
-            <!-- NO label -->
-            <ellipse cx="500" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="500" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="500" y1="235" x2="500" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- NO label (知っておく center=480) -->
+            <ellipse cx="480" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="480" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="480" y1="235" x2="480" y2="240" stroke="#a3a3a3" stroke-width="2"/>
 
             <!-- Q3 (YES側) -->
             <rect x="0" y="300" width="200" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
@@ -126,9 +126,7 @@
             <line x1="270" y1="410" x2="270" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
 
             <!-- 結果への線 (知っておく center=480, ゆっくり眺める center=690) -->
-            <line x1="500" y1="270" x2="480" y2="270" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="480" y1="270" x2="480" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
-            <line x1="700" y1="130" x2="690" y2="130" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="690" y1="130" x2="690" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
 
             <!-- 結果ボタン（すべて同じ高さ y=450） -->
@@ -152,6 +150,7 @@
               <text x="690" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">ゆっくり眺める</text>
             </a>
           </svg>
+          <p class="flow-hint">↑ ボタンをタップしてみよう</p>
         </div>
 
         <!-- クリックで表示される結果 -->
@@ -219,12 +218,19 @@
           <p>そして、試行錯誤も未完成も、全部OKな場所がここにはあります。</p>
         </div>
         <div class="result-action">
-          <p class="action-label">次の一歩（ひとつだけ）</p>
+          <p class="action-label">次の一歩</p>
           <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Discordで「作ったもの／試したこと」を共有する</a>
           <ul class="action-notes">
             <li>完成してなくてOK</li>
             <li>スクショ1枚でもOK</li>
             <li>「これ何？」でもOK</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="action-btn action-connpass">connpassで発表してみる</a>
+          <ul class="action-notes">
+            <li>好きなことを自由に発表できる場</li>
+            <li>月1くらいでイベント開催中</li>
           </ul>
         </div>
         <p class="result-footnote">Discordで遊んでいるうちに、次のまつりで展示や発表をしたくなるかも。熱烈歓迎。</p>
@@ -403,16 +409,16 @@
             <!-- Q1 → 分岐線 -->
             <line x1="400" y1="80" x2="400" y2="95" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="400" y1="95" x2="200" y2="95" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="400" y1="95" x2="700" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="690" y2="95" stroke="#a3a3a3" stroke-width="2"/>
             <!-- YES label -->
             <ellipse cx="200" cy="115" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
             <text x="200" y="120" text-anchor="middle" class="flow-svg-label">YES</text>
             <line x1="200" y1="95" x2="200" y2="100" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="200" y1="130" x2="200" y2="150" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
-            <!-- NO label -->
-            <ellipse cx="700" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="700" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="700" y1="95" x2="700" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- NO label (Just Watch center=690) -->
+            <ellipse cx="690" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="690" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="690" y1="95" x2="690" y2="100" stroke="#a3a3a3" stroke-width="2"/>
 
             <!-- Q2 -->
             <rect x="50" y="160" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
@@ -422,16 +428,16 @@
             <!-- Q2 → 分岐線 -->
             <line x1="200" y1="220" x2="200" y2="235" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="200" y1="235" x2="100" y2="235" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="200" y1="235" x2="500" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="480" y2="235" stroke="#a3a3a3" stroke-width="2"/>
             <!-- YES label -->
             <ellipse cx="100" cy="255" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
             <text x="100" y="260" text-anchor="middle" class="flow-svg-label">YES</text>
             <line x1="100" y1="235" x2="100" y2="240" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="100" y1="270" x2="100" y2="290" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
-            <!-- NO label -->
-            <ellipse cx="500" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="500" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="500" y1="235" x2="500" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- NO label (Stay Informed center=480) -->
+            <ellipse cx="480" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="480" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="480" y1="235" x2="480" y2="240" stroke="#a3a3a3" stroke-width="2"/>
 
             <!-- Q3 -->
             <rect x="0" y="300" width="200" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
@@ -454,9 +460,7 @@
             <line x1="270" y1="410" x2="270" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
 
             <!-- 結果への線 (Stay Informed center=480, Just Watch center=690) -->
-            <line x1="500" y1="270" x2="480" y2="270" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="480" y1="270" x2="480" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
-            <line x1="700" y1="130" x2="690" y2="130" stroke="#a3a3a3" stroke-width="2"/>
             <line x1="690" y1="130" x2="690" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
 
             <!-- 結果ボタン（すべて同じ高さ y=450） -->
@@ -480,6 +484,7 @@
               <text x="690" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">Just Watch</text>
             </a>
           </svg>
+          <p class="flow-hint">↑ Tap a button to see more</p>
         </div>
 
         <!-- クリックで表示される結果 -->
@@ -551,6 +556,13 @@
             <li>Doesn't need to be finished</li>
             <li>Even a screenshot is fine</li>
             <li>"What's this?" is OK too</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="action-btn action-connpass">Present at connpass events</a>
+          <ul class="action-notes">
+            <li>A place to freely share what you like</li>
+            <li>Events held about once a month</li>
           </ul>
         </div>
         <p class="result-footnote">Playing around on Discord might make you want to present at the next festival. You'd be warmly welcomed.</p>

@@ -138,8 +138,15 @@
       if (resultData) {
         contentBox.innerHTML = resultData.innerHTML;
         detailBox.classList.add('active');
-        // Scroll to detail
-        detailBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Scroll to detail - position at top with small offset
+        const flowHint = wrapper.querySelector('.flow-hint');
+        if (flowHint) {
+          const hintRect = flowHint.getBoundingClientRect();
+          const scrollTarget = window.scrollY + hintRect.bottom + 16;
+          window.scrollTo({ top: scrollTarget, behavior: 'smooth' });
+        } else {
+          detailBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     }
 
