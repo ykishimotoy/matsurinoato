@@ -138,6 +138,9 @@
       if (resultData) {
         contentBox.innerHTML = resultData.innerHTML;
         detailBox.classList.add('active');
+        // Add class to community-info for reduced padding
+        const communityInfo = wrapper.querySelector('.community-info');
+        if (communityInfo) communityInfo.classList.add('result-active');
         // Scroll to detail - position at top with small offset
         const flowHint = wrapper.querySelector('.flow-hint');
         if (flowHint) {
@@ -173,6 +176,9 @@
     document.querySelectorAll('.result-close').forEach(btn => {
       btn.addEventListener('click', function() {
         this.closest('.flow-result-detail').classList.remove('active');
+        const wrapper = this.closest('.content-wrapper');
+        const communityInfo = wrapper.querySelector('.community-info');
+        if (communityInfo) communityInfo.classList.remove('result-active');
       });
     });
   }
