@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まつりのあと | 札幌すごいAIまつり</title>
+  <meta name="description" content="札幌すごいAIまつりに参加いただきありがとうございました。次にどう関わるか、一緒に考えましょう。">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Language Switcher -->
+  <nav class="lang-nav">
+    <button id="lang-ja" class="lang-btn active">JA</button>
+    <button id="lang-en" class="lang-btn">EN</button>
+  </nav>
+
+  <!-- ==================== JAPANESE ==================== -->
+  <div id="content-ja" class="content-wrapper">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>まつりは終わった。次は夏。</span>
+          <span>そして、あなたのAIはここから始まる。</span>
+        </h1>
+        <div class="hero-lead">
+          <p>
+            今日、<br>
+            ちょっと面白かった人も<br>
+            正直よく分からなかった人も<br>
+            「見るだけで満足」だった人も。
+          </p>
+          <p class="hero-lead-em">それで十分です。</p>
+          <p>
+            このページは、<br>
+            <strong>"次に何かしなきゃ"と動く人だけのものではありません。</strong>
+          </p>
+          <p>
+            「このあと、どう関わるのが自分に合ってそうか」を<br>
+            一緒に考えるためのページです。
+          </p>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Flowchart -->
+    <section class="flowchart">
+      <div class="container">
+        <p class="flow-intro">まずは、軽く答えてみてください。<br>正解はありません。直感でOKです。</p>
+
+        <div class="flow-diagram-svg">
+          <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet">
+            <!-- 矢印マーカー定義 -->
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#a3a3a3"/>
+              </marker>
+            </defs>
+
+            <!-- Q1 -->
+            <rect x="250" y="20" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="400" y="45" text-anchor="middle" class="flow-svg-text">今日のAI、ちょっとでも</text>
+            <text x="400" y="65" text-anchor="middle" class="flow-svg-text">「面白い」と感じましたか？</text>
+
+            <!-- Q1 → 分岐線 -->
+            <line x1="400" y1="80" x2="400" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="200" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="700" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="200" cy="115" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="200" y="120" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="200" y1="95" x2="200" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="130" x2="200" y2="150" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- NO label -->
+            <ellipse cx="700" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="700" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="700" y1="95" x2="700" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+
+            <!-- Q2 (YES側) -->
+            <rect x="50" y="160" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="200" y="185" text-anchor="middle" class="flow-svg-text">自分でも、少し</text>
+            <text x="200" y="205" text-anchor="middle" class="flow-svg-text">触ってみたい気がしますか？</text>
+
+            <!-- Q2 → 分岐線 -->
+            <line x1="200" y1="220" x2="200" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="100" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="500" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="100" cy="255" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="100" y="260" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="100" y1="235" x2="100" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="270" x2="100" y2="290" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- NO label -->
+            <ellipse cx="500" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="500" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="500" y1="235" x2="500" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+
+            <!-- Q3 (YES側) -->
+            <rect x="0" y="300" width="200" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="100" y="325" text-anchor="middle" class="flow-svg-text">作りたいものを明確に</text>
+            <text x="100" y="345" text-anchor="middle" class="flow-svg-text">イメージしていますか？</text>
+
+            <!-- Q3 → 分岐線 -->
+            <line x1="100" y1="360" x2="100" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="375" x2="50" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="375" x2="300" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="50" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="50" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="50" y1="375" x2="50" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="50" y1="410" x2="50" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- NO label -->
+            <ellipse cx="300" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="300" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="300" y1="375" x2="300" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="300" y1="410" x2="300" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+            <!-- 結果への線 -->
+            <line x1="500" y1="270" x2="500" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <line x1="700" y1="130" x2="700" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+            <!-- 結果ボタン（すべて同じ高さ y=450） -->
+            <a class="flow-result-link" data-result="c">
+              <rect x="0" y="450" width="140" height="50" rx="8" fill="#5865F2" class="flow-result-btn" data-result="c"/>
+              <text x="70" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">遊び場へ</text>
+            </a>
+
+            <a class="flow-result-link" data-result="d">
+              <rect x="180" y="450" width="180" height="50" rx="8" fill="#2563eb" class="flow-result-btn" data-result="d"/>
+              <text x="270" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">はじめの一歩</text>
+            </a>
+
+            <a class="flow-result-link" data-result="b">
+              <rect x="400" y="450" width="160" height="50" rx="8" fill="#E05656" class="flow-result-btn" data-result="b"/>
+              <text x="480" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">知っておく</text>
+            </a>
+
+            <a class="flow-result-link" data-result="a">
+              <rect x="600" y="450" width="180" height="50" rx="8" fill="#5865F2" class="flow-result-btn" data-result="a"/>
+              <text x="690" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">ゆっくり眺める</text>
+            </a>
+          </svg>
+        </div>
+
+        <!-- クリックで表示される結果 -->
+        <div class="flow-result-detail" id="result-detail">
+          <button class="result-close" aria-label="閉じる">&times;</button>
+          <div class="result-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Data (hidden, used by JS) -->
+    <template id="result-data-ja">
+      <div data-result="a">
+        <h2>ゆっくり眺める</h2>
+        <p class="result-subtitle">正直、よく分からなかった人へ</p>
+        <div class="result-message">
+          <p><strong>それ、めちゃくちゃ普通です。</strong></p>
+          <p>AIは「分かった瞬間に面白くなる」ものじゃなくて、<strong>分からないまま何回か見て、ある日ふっと腑に落ちる</strong>ものだったりします。</p>
+          <p>今日の展示も、裏側ではかなり複雑なことをしていますが、来場者が全部分かる必要はまったくありません。</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">次の一歩（ひとつだけ）</p>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Discordに参加する（読むだけOK）</a>
+          <ul class="action-notes">
+            <li>質問しなくていい</li>
+            <li>発言しなくていい</li>
+            <li>「眺めるだけ」大歓迎です</li>
+          </ul>
+        </div>
+        <p class="result-footnote">前回はよく分からなかった、という人が、次のまつりでは普通に会場でAIを使っていたりします。</p>
+      </div>
+      <div data-result="b">
+        <h2>知っておく</h2>
+        <p class="result-subtitle">見るのは楽しいけど、自分でやる気はしない人へ</p>
+        <div class="result-message">
+          <p><strong>それも、全然アリです。</strong></p>
+          <p>AIは「使う人」だけのものではありません。<strong>知っているだけで、判断が楽になる場面</strong>がこれから増えていきます。</p>
+          <p>仕事でも、家庭でも、ニュースを見るときでも。「それ、AIでできるやつだな」と分かるだけで、世界の見え方は変わります。</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">次の一歩</p>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Discordに参加する（読むだけOK）</a>
+          <ul class="action-notes">
+            <li>質問しなくていい</li>
+            <li>発言しなくていい</li>
+            <li>「眺めるだけ」大歓迎です</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">すごいAI道場で学んでみる</a>
+          <ul class="action-notes">
+            <li>登録不要・無料</li>
+            <li>途中でやめてもOK</li>
+            <li>分からなくてもOK</li>
+          </ul>
+        </div>
+        <p class="result-footnote">情報を追っているだけの人も、またふらりと集まって楽しめる場所。それが、次のAIまつりです。</p>
+      </div>
+      <div data-result="c">
+        <h2>遊び場へ</h2>
+        <p class="result-subtitle">触ってみたい & 作りたいものがある人へ</p>
+        <div class="result-message">
+          <p><strong>ようこそ、遊び場へ。</strong></p>
+          <p>今日見た展示は、「すごい人だからできた」ものではありません。すごいAIを、楽しく使って身に付けたから作れたものです。</p>
+          <p>そして、試行錯誤も未完成も、全部OKな場所がここにはあります。</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">次の一歩（ひとつだけ）</p>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Discordで「作ったもの／試したこと」を共有する</a>
+          <ul class="action-notes">
+            <li>完成してなくてOK</li>
+            <li>スクショ1枚でもOK</li>
+            <li>「これ何？」でもOK</li>
+          </ul>
+        </div>
+        <p class="result-footnote">Discordで遊んでいるうちに、次のまつりで展示や発表をしたくなるかも。熱烈歓迎。</p>
+      </div>
+      <div data-result="d">
+        <h2>はじめの一歩</h2>
+        <p class="result-subtitle">触ってみたい & まだイメージがない人へ</p>
+        <div class="result-message">
+          <p><strong>ここが、一番多いスタート地点です。</strong></p>
+          <p>知識がなくても、作りたいものがわからなくても、AIはもう「触っていい道具」になっています。</p>
+          <p>今日の展示と同じ系統のことを、<strong>30分で体験できる入口</strong>を用意しています。</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">次の一歩（ひとつだけ）</p>
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">AI道場（超入門コンテンツ）</a>
+          <ul class="action-notes">
+            <li>登録不要</li>
+            <li>途中でやめてもOK</li>
+            <li>分からなくてもOK</li>
+          </ul>
+        </div>
+        <p class="result-footnote">今日がはじめてでも、次のまつりでは、また違う景色が見えているかもしれません。</p>
+      </div>
+    </template>
+
+    <!-- Community Info -->
+    <section class="community-info">
+      <div class="container">
+        <h2 class="section-title">コミュニティについて</h2>
+
+        <div class="community-grid community-grid-3">
+          <div class="community-card">
+            <h3>Discord</h3>
+            <ul>
+              <li>読むだけ参加OK</li>
+              <li>質問OK（初歩歓迎）</li>
+              <li>雑談OK</li>
+              <li>子連れ・非エンジニア歓迎</li>
+            </ul>
+            <p class="community-note">「ちゃんとしなくていい場所」として設計されています。</p>
+            <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="community-link">Discordに参加 →</a>
+          </div>
+
+          <div class="community-card">
+            <h3>connpass</h3>
+            <ul>
+              <li>発表しなくてOK</li>
+              <li>知り合いいなくてOK</li>
+              <li>見学だけ参加OK</li>
+            </ul>
+            <p class="community-note">「参加者でいるだけ」で大丈夫です。</p>
+            <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="community-link">イベントを見る →</a>
+          </div>
+
+          <div class="community-card">
+            <h3>すごいAI道場</h3>
+            <ul>
+              <li>登録不要</li>
+              <li>無料で学べる</li>
+              <li>30分から始められる</li>
+              <li>スマホでもOK</li>
+            </ul>
+            <p class="community-note">AIを触ってみる、最初の入口です。</p>
+            <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="community-link">AI道場へ →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ending -->
+    <section class="ending">
+      <div class="container">
+        <div class="ending-content">
+          <p>
+            今日のまつりは、<br>
+            「何かを始めるきっかけ」だったかもしれないし、<br>
+            「ちょっと楽しい思い出」だったかもしれません。
+          </p>
+          <p><strong>どちらでも、正解です。</strong></p>
+          <p class="ending-observation">
+            今日、前で話していた人たちも、<br>
+            最初は見ているだけでした。<br>
+            時間が経って、気づいたら前にいた。<br>
+            そういう人が、何人もいます。
+          </p>
+          <p>
+            またどこかでAIに触れたくなったら、<br>
+            そのときは、また会いましょう。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Event -->
+    <section class="next-event">
+      <div class="container">
+        <p class="next-label">また集まる場所</p>
+        <h2 class="next-title">札幌すごいAIまつり 2026夏</h2>
+        <p class="next-date">2026年8月29日（土）</p>
+        <p class="next-venue">Deep Tech CORE SAPPORO</p>
+        <p class="next-message">
+          見る人も、何か持ってくる人もいる。<br>
+          それぞれの種火を持ち寄って、また焚き火をしましょう。
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="contact">
+      <div class="container">
+        <p class="copyright">© 2026 札幌すごいAI会</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <div id="content-en" class="content-wrapper" style="display: none;">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>The festival is over. Summer is next.</span>
+          <span>And your AI begins here.</span>
+        </h1>
+        <div class="hero-lead">
+          <p>
+            Whether you found it interesting,<br>
+            didn't quite get it,<br>
+            or were happy just watching...
+          </p>
+          <p class="hero-lead-em">That's perfectly fine.</p>
+          <p>
+            This page isn't just for people who feel like<br>
+            <strong>"I need to do something next."</strong>
+          </p>
+          <p>
+            It's a place to explore<br>
+            what kind of relationship with AI might suit you.
+          </p>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Flowchart -->
+    <section class="flowchart">
+      <div class="container">
+        <p class="flow-intro">Answer casually. There's no right answer.</p>
+
+        <div class="flow-diagram-svg">
+          <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <marker id="arrowhead-en" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#a3a3a3"/>
+              </marker>
+            </defs>
+
+            <!-- Q1 -->
+            <rect x="250" y="20" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="400" y="45" text-anchor="middle" class="flow-svg-text">Did you find today's AI</text>
+            <text x="400" y="65" text-anchor="middle" class="flow-svg-text">even a little interesting?</text>
+
+            <!-- Q1 → 分岐線 -->
+            <line x1="400" y1="80" x2="400" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="200" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="400" y1="95" x2="700" y2="95" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="200" cy="115" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="200" y="120" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="200" y1="95" x2="200" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="130" x2="200" y2="150" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- NO label -->
+            <ellipse cx="700" cy="115" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="700" y="120" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="700" y1="95" x2="700" y2="100" stroke="#a3a3a3" stroke-width="2"/>
+
+            <!-- Q2 -->
+            <rect x="50" y="160" width="300" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="200" y="185" text-anchor="middle" class="flow-svg-text">Do you feel like trying</text>
+            <text x="200" y="205" text-anchor="middle" class="flow-svg-text">it yourself a bit?</text>
+
+            <!-- Q2 → 分岐線 -->
+            <line x1="200" y1="220" x2="200" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="100" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="200" y1="235" x2="500" y2="235" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="100" cy="255" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="100" y="260" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="100" y1="235" x2="100" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="270" x2="100" y2="290" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- NO label -->
+            <ellipse cx="500" cy="255" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="500" y="260" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="500" y1="235" x2="500" y2="240" stroke="#a3a3a3" stroke-width="2"/>
+
+            <!-- Q3 -->
+            <rect x="0" y="300" width="200" height="60" rx="8" fill="#fff" stroke="#d4d4d4" stroke-width="2"/>
+            <text x="100" y="325" text-anchor="middle" class="flow-svg-text">Do you have a clear</text>
+            <text x="100" y="345" text-anchor="middle" class="flow-svg-text">idea of what to make?</text>
+
+            <!-- Q3 → 分岐線 -->
+            <line x1="100" y1="360" x2="100" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="375" x2="50" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="100" y1="375" x2="300" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <!-- YES label -->
+            <ellipse cx="50" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="50" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="50" y1="375" x2="50" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="50" y1="410" x2="50" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- NO label -->
+            <ellipse cx="300" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="300" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="300" y1="375" x2="300" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="300" y1="410" x2="300" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+
+            <!-- 結果への線 -->
+            <line x1="500" y1="270" x2="500" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <line x1="700" y1="130" x2="700" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+
+            <!-- 結果ボタン（すべて同じ高さ y=450） -->
+            <a class="flow-result-link" data-result="c">
+              <rect x="0" y="450" width="140" height="50" rx="8" fill="#5865F2" class="flow-result-btn" data-result="c"/>
+              <text x="70" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">Playground</text>
+            </a>
+
+            <a class="flow-result-link" data-result="d">
+              <rect x="180" y="450" width="180" height="50" rx="8" fill="#2563eb" class="flow-result-btn" data-result="d"/>
+              <text x="270" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">First Step</text>
+            </a>
+
+            <a class="flow-result-link" data-result="b">
+              <rect x="400" y="450" width="160" height="50" rx="8" fill="#E05656" class="flow-result-btn" data-result="b"/>
+              <text x="480" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">Stay Informed</text>
+            </a>
+
+            <a class="flow-result-link" data-result="a">
+              <rect x="600" y="450" width="180" height="50" rx="8" fill="#5865F2" class="flow-result-btn" data-result="a"/>
+              <text x="690" y="482" text-anchor="middle" class="flow-svg-result" pointer-events="none">Just Watch</text>
+            </a>
+          </svg>
+        </div>
+
+        <!-- クリックで表示される結果 -->
+        <div class="flow-result-detail" id="result-detail-en">
+          <button class="result-close" aria-label="Close">&times;</button>
+          <div class="result-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Data (hidden, used by JS) -->
+    <template id="result-data-en">
+      <div data-result="a">
+        <h2>Just Watch</h2>
+        <p class="result-subtitle">For those who didn't quite get it</p>
+        <div class="result-message">
+          <p><strong>That's completely normal.</strong></p>
+          <p>AI isn't something that clicks instantly. Sometimes it takes a few exposures before it suddenly makes sense.</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">One small step</p>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Join Discord (lurking is OK)</a>
+          <ul class="action-notes">
+            <li>No need to ask questions</li>
+            <li>No need to post</li>
+            <li>Just watching is welcome</li>
+          </ul>
+        </div>
+        <p class="result-footnote">People who didn't quite get it last time are often using AI at the venue at the next festival.</p>
+      </div>
+      <div data-result="b">
+        <h2>Stay Informed</h2>
+        <p class="result-subtitle">Enjoyed watching, but don't want to try it yourself</p>
+        <div class="result-message">
+          <p><strong>That's totally valid.</strong></p>
+          <p>AI isn't just for people who use it. Just knowing about it helps you make better decisions.</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">One small step</p>
+          <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="action-btn action-connpass">Check out upcoming events on connpass</a>
+          <ul class="action-notes">
+            <li>No need to present</li>
+            <li>No need to know anyone</li>
+            <li>Observing only is fine</li>
+          </ul>
+        </div>
+        <p class="result-footnote">A place where people who just follow the news can drop by and enjoy. That's the next AI Festival.</p>
+      </div>
+      <div data-result="c">
+        <h2>Playground</h2>
+        <p class="result-subtitle">Want to try & have an idea</p>
+        <div class="result-message">
+          <p><strong>Welcome to the playground.</strong></p>
+          <p>What you saw today wasn't made by "special" people. They learned AI by having fun with it.</p>
+          <p>Work-in-progress and incomplete projects are all welcome here.</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">One small step</p>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Share what you've made on Discord</a>
+          <ul class="action-notes">
+            <li>Doesn't need to be finished</li>
+            <li>Even a screenshot is fine</li>
+            <li>"What's this?" is OK too</li>
+          </ul>
+        </div>
+        <p class="result-footnote">Playing around on Discord might make you want to present at the next festival. You'd be warmly welcomed.</p>
+      </div>
+      <div data-result="d">
+        <h2>First Step</h2>
+        <p class="result-subtitle">Want to try & no clear idea yet</p>
+        <div class="result-message">
+          <p><strong>This is the most common starting point.</strong></p>
+          <p>No knowledge needed, no clear idea needed. AI is now a tool anyone can touch.</p>
+          <p>We've prepared an entry point where you can experience similar things to today's exhibits in <strong>30 minutes</strong>.</p>
+        </div>
+        <div class="result-action">
+          <p class="action-label">One small step</p>
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">AI Dojo (Beginner Content)</a>
+          <ul class="action-notes">
+            <li>No registration needed</li>
+            <li>OK to stop midway</li>
+            <li>OK if you don't understand</li>
+          </ul>
+        </div>
+        <p class="result-footnote">Even if today was your first time, the view might be different at the next festival.</p>
+      </div>
+    </template>
+
+    <!-- Community Info -->
+    <section class="community-info">
+      <div class="container">
+        <h2 class="section-title">About the Community</h2>
+
+        <div class="community-grid community-grid-3">
+          <div class="community-card">
+            <h3>Discord</h3>
+            <ul>
+              <li>Lurking is OK</li>
+              <li>Questions welcome (beginners too)</li>
+              <li>Casual chat OK</li>
+              <li>Non-engineers welcome</li>
+            </ul>
+            <p class="community-note">Designed as a "no pressure" space.</p>
+            <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="community-link">Join Discord →</a>
+          </div>
+
+          <div class="community-card">
+            <h3>connpass</h3>
+            <ul>
+              <li>No need to present</li>
+              <li>No need to know anyone</li>
+              <li>Observing only is fine</li>
+            </ul>
+            <p class="community-note">Just being there is enough.</p>
+            <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="community-link">View Events →</a>
+          </div>
+
+          <div class="community-card">
+            <h3>Sugoi AI Dojo</h3>
+            <ul>
+              <li>No registration needed</li>
+              <li>Free to learn</li>
+              <li>Start in 30 minutes</li>
+              <li>Works on mobile</li>
+            </ul>
+            <p class="community-note">Your first entry point to try AI.</p>
+            <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="community-link">Go to AI Dojo →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ending -->
+    <section class="ending">
+      <div class="container">
+        <div class="ending-content">
+          <p>
+            Today's festival might have been<br>
+            a starting point for something new,<br>
+            or just a fun memory.
+          </p>
+          <p><strong>Either way, that's the right answer.</strong></p>
+          <p class="ending-observation">
+            The people presenting today<br>
+            were once just watching too.<br>
+            Time passed, and before they knew it,<br>
+            they were up front. Many of them.
+          </p>
+          <p>
+            If you ever feel like touching AI again,<br>
+            we'll be here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Event -->
+    <section class="next-event">
+      <div class="container">
+        <p class="next-label">A Place to Gather Again</p>
+        <h2 class="next-title">Sapporo Sugoi AI Festival 2026 Summer</h2>
+        <p class="next-date">August 29, 2026 (Sat)</p>
+        <p class="next-venue">Deep Tech CORE SAPPORO</p>
+        <p class="next-message">
+          Some come to watch, some bring something.<br>
+          Let's gather our sparks and build another bonfire.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="contact">
+      <div class="container">
+        <p class="copyright">© 2026 Sapporo Sugoi AI Community</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
