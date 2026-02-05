@@ -603,6 +603,11 @@ ul {
   left: 0;
 }
 
+.flow-result-detail .result-action-secondary {
+  margin-top: 16px;
+  background: var(--gray-200);
+}
+
 .flow-result-detail .result-footnote {
   margin-top: 24px;
   padding-top: 20px;
@@ -617,30 +622,24 @@ ul {
   .flowchart {
     padding: 60px 0;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .flow-diagram-svg {
-    min-width: 500px;
+    min-width: 600px;
     padding: 0 16px;
   }
 
   .flow-result-detail {
     margin: 32px 16px 0;
     padding: 24px;
+    min-width: auto;
   }
 }
 
 @media (max-width: 640px) {
   .flow-diagram-svg {
-    min-width: 450px;
-  }
-
-  .flow-svg-text {
-    font-size: 12px;
-  }
-
-  .flow-svg-result {
-    font-size: 11px;
+    min-width: 580px;
   }
 }
 
@@ -786,6 +785,12 @@ ul {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--black);
+  margin-bottom: 8px;
+}
+
+.community-subtitle {
+  font-size: 0.875rem;
+  color: var(--gray-500);
   margin-bottom: 16px;
 }
 

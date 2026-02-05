@@ -112,22 +112,24 @@
 
             <!-- Q3 → 分岐線 -->
             <line x1="100" y1="360" x2="100" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="100" y1="375" x2="50" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="100" y1="375" x2="300" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <!-- YES label -->
-            <ellipse cx="50" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="50" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
-            <line x1="50" y1="375" x2="50" y2="380" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="50" y1="410" x2="50" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
-            <!-- NO label -->
-            <ellipse cx="300" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="300" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="300" y1="375" x2="300" y2="380" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="300" y1="410" x2="300" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- YES label (遊び場へ center=70) -->
+            <ellipse cx="70" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="70" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="100" y1="375" x2="70" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="70" y1="375" x2="70" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="70" y1="410" x2="70" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- NO label (はじめの一歩 center=270) -->
+            <ellipse cx="270" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="270" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="100" y1="375" x2="270" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="270" y1="375" x2="270" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="270" y1="410" x2="270" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
 
-            <!-- 結果への線 -->
-            <line x1="500" y1="270" x2="500" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
-            <line x1="700" y1="130" x2="700" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <!-- 結果への線 (知っておく center=480, ゆっくり眺める center=690) -->
+            <line x1="500" y1="270" x2="480" y2="270" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="480" y1="270" x2="480" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <line x1="700" y1="130" x2="690" y2="130" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="690" y1="130" x2="690" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead)"/>
 
             <!-- 結果ボタン（すべて同じ高さ y=450） -->
             <a class="flow-result-link" data-result="c">
@@ -236,12 +238,17 @@
           <p>今日の展示と同じ系統のことを、<strong>30分で体験できる入口</strong>を用意しています。</p>
         </div>
         <div class="result-action">
-          <p class="action-label">次の一歩（ひとつだけ）</p>
-          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">AI道場（超入門コンテンツ）</a>
+          <p class="action-label">次の一歩</p>
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">すごいAI道場で学んでみる</a>
           <ul class="action-notes">
-            <li>登録不要</li>
-            <li>途中でやめてもOK</li>
-            <li>分からなくてもOK</li>
+            <li>登録不要・無料</li>
+            <li>AI基礎、起業、クリエイティブを興味に応じて段階的に学べる</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Discordに参加する</a>
+          <ul class="action-notes">
+            <li>学習の継続を発信して、続けるモチベにできる</li>
           </ul>
         </div>
         <p class="result-footnote">今日がはじめてでも、次のまつりでは、また違う景色が見えているかもしれません。</p>
@@ -256,11 +263,13 @@
         <div class="community-grid community-grid-3">
           <div class="community-card">
             <h3>Discord</h3>
+            <p class="community-subtitle">体験を共有できる、安心コミュニティ</p>
             <ul>
               <li>読むだけ参加OK</li>
               <li>質問OK（初歩歓迎）</li>
               <li>雑談OK</li>
               <li>子連れ・非エンジニア歓迎</li>
+              <li>もちろん技術的な投稿もOK</li>
             </ul>
             <p class="community-note">「ちゃんとしなくていい場所」として設計されています。</p>
             <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="community-link">Discordに参加 →</a>
@@ -268,10 +277,12 @@
 
           <div class="community-card">
             <h3>connpass</h3>
+            <p class="community-subtitle">イベント募集の場</p>
             <ul>
               <li>発表しなくてOK</li>
               <li>知り合いいなくてOK</li>
               <li>見学だけ参加OK</li>
+              <li>もちろんLT登壇も大歓迎</li>
             </ul>
             <p class="community-note">「参加者でいるだけ」で大丈夫です。</p>
             <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="community-link">イベントを見る →</a>
@@ -279,11 +290,10 @@
 
           <div class="community-card">
             <h3>すごいAI道場</h3>
+            <p class="community-subtitle">体系的にAIを学べる学習サイト</p>
             <ul>
-              <li>登録不要</li>
-              <li>無料で学べる</li>
-              <li>30分から始められる</li>
-              <li>スマホでもOK</li>
+              <li>登録不要・無料・30分から学べる</li>
+              <li>AI基礎、ビジコン・起業、クリエイティブを興味に合わせて学べる</li>
             </ul>
             <p class="community-note">AIを触ってみる、最初の入口です。</p>
             <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="community-link">AI道場へ →</a>
@@ -309,7 +319,7 @@
             そういう人が、何人もいます。
           </p>
           <p>
-            またどこかでAIに触れたくなったら、<br>
+            どこかでAIに触れたくなったら、<br>
             そのときは、また会いましょう。
           </p>
         </div>
@@ -430,22 +440,24 @@
 
             <!-- Q3 → 分岐線 -->
             <line x1="100" y1="360" x2="100" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="100" y1="375" x2="50" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="100" y1="375" x2="300" y2="375" stroke="#a3a3a3" stroke-width="2"/>
-            <!-- YES label -->
-            <ellipse cx="50" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="50" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
-            <line x1="50" y1="375" x2="50" y2="380" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="50" y1="410" x2="50" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
-            <!-- NO label -->
-            <ellipse cx="300" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
-            <text x="300" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
-            <line x1="300" y1="375" x2="300" y2="380" stroke="#a3a3a3" stroke-width="2"/>
-            <line x1="300" y1="410" x2="300" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- YES label (Playground center=70) -->
+            <ellipse cx="70" cy="395" rx="28" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="70" y="400" text-anchor="middle" class="flow-svg-label">YES</text>
+            <line x1="100" y1="375" x2="70" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="70" y1="375" x2="70" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="70" y1="410" x2="70" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- NO label (First Step center=270) -->
+            <ellipse cx="270" cy="395" rx="24" ry="14" fill="#fff" stroke="#a3a3a3" stroke-width="1.5"/>
+            <text x="270" y="400" text-anchor="middle" class="flow-svg-label">NO</text>
+            <line x1="100" y1="375" x2="270" y2="375" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="270" y1="375" x2="270" y2="380" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="270" y1="410" x2="270" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
 
-            <!-- 結果への線 -->
-            <line x1="500" y1="270" x2="500" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
-            <line x1="700" y1="130" x2="700" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <!-- 結果への線 (Stay Informed center=480, Just Watch center=690) -->
+            <line x1="500" y1="270" x2="480" y2="270" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="480" y1="270" x2="480" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
+            <line x1="700" y1="130" x2="690" y2="130" stroke="#a3a3a3" stroke-width="2"/>
+            <line x1="690" y1="130" x2="690" y2="440" stroke="#a3a3a3" stroke-width="2" marker-end="url(#arrowhead-en)"/>
 
             <!-- 結果ボタン（すべて同じ高さ y=450） -->
             <a class="flow-result-link" data-result="c">
@@ -507,11 +519,19 @@
         </div>
         <div class="result-action">
           <p class="action-label">One small step</p>
-          <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="action-btn action-connpass">Check out upcoming events on connpass</a>
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Join Discord (lurking is OK)</a>
           <ul class="action-notes">
-            <li>No need to present</li>
-            <li>No need to know anyone</li>
-            <li>Observing only is fine</li>
+            <li>No need to ask questions</li>
+            <li>No need to post</li>
+            <li>Just watching is welcome</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">Try Sugoi AI Dojo</a>
+          <ul class="action-notes">
+            <li>No registration, free</li>
+            <li>OK to stop midway</li>
+            <li>OK if you don't understand</li>
           </ul>
         </div>
         <p class="result-footnote">A place where people who just follow the news can drop by and enjoy. That's the next AI Festival.</p>
@@ -545,11 +565,16 @@
         </div>
         <div class="result-action">
           <p class="action-label">One small step</p>
-          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">AI Dojo (Beginner Content)</a>
+          <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="action-btn action-dojo">Try Sugoi AI Dojo</a>
           <ul class="action-notes">
-            <li>No registration needed</li>
-            <li>OK to stop midway</li>
-            <li>OK if you don't understand</li>
+            <li>No registration, free</li>
+            <li>Learn AI basics, business, creative - step by step based on your interest</li>
+          </ul>
+        </div>
+        <div class="result-action result-action-secondary">
+          <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="action-btn action-discord">Join Discord</a>
+          <ul class="action-notes">
+            <li>Share your learning progress to stay motivated</li>
           </ul>
         </div>
         <p class="result-footnote">Even if today was your first time, the view might be different at the next festival.</p>
@@ -564,11 +589,13 @@
         <div class="community-grid community-grid-3">
           <div class="community-card">
             <h3>Discord</h3>
+            <p class="community-subtitle">A safe community to share experiences</p>
             <ul>
               <li>Lurking is OK</li>
               <li>Questions welcome (beginners too)</li>
               <li>Casual chat OK</li>
               <li>Non-engineers welcome</li>
+              <li>Technical posts also welcome</li>
             </ul>
             <p class="community-note">Designed as a "no pressure" space.</p>
             <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener" class="community-link">Join Discord →</a>
@@ -576,10 +603,12 @@
 
           <div class="community-card">
             <h3>connpass</h3>
+            <p class="community-subtitle">Event announcements</p>
             <ul>
               <li>No need to present</li>
               <li>No need to know anyone</li>
               <li>Observing only is fine</li>
+              <li>LT presentations also welcome</li>
             </ul>
             <p class="community-note">Just being there is enough.</p>
             <a href="https://sapporo-sugoi-ai.connpass.com" target="_blank" rel="noopener" class="community-link">View Events →</a>
@@ -587,11 +616,10 @@
 
           <div class="community-card">
             <h3>Sugoi AI Dojo</h3>
+            <p class="community-subtitle">A structured learning site for AI</p>
             <ul>
-              <li>No registration needed</li>
-              <li>Free to learn</li>
-              <li>Start in 30 minutes</li>
-              <li>Works on mobile</li>
+              <li>No registration, free, start in 30 minutes</li>
+              <li>Learn AI basics, business, creative based on your interest</li>
             </ul>
             <p class="community-note">Your first entry point to try AI.</p>
             <a href="https://dojo.sugoiai.org" target="_blank" rel="noopener" class="community-link">Go to AI Dojo →</a>
@@ -617,7 +645,7 @@
             they were up front. Many of them.
           </p>
           <p>
-            If you ever feel like touching AI again,<br>
+            If you ever feel like exploring AI,<br>
             we'll be here.
           </p>
         </div>
