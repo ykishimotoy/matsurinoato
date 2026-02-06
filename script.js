@@ -191,30 +191,45 @@
     // Only on mobile
     if (window.innerWidth > 800) return;
 
-    const flowcharts = document.querySelectorAll('.flowchart');
+    const svgContainers = document.querySelectorAll('.flow-diagram-svg');
+
+    // Set initial scroll position to center Q1 node (x=400 in SVG)
+    svgContainers.forEach(container => {
+      const containerWidth = container.offsetWidth;
+      const svgWidth = 800;
+      const q1CenterX = 400;
+      const scrollTarget = q1CenterX - (containerWidth / 2);
+      container.scrollLeft = Math.max(0, scrollTarget);
+    });
 
     if (!('IntersectionObserver' in window)) return;
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const overlay = entry.target.querySelector('.scroll-hint-overlay');
+          const container = entry.target;
+          const overlay = container.querySelector('.scroll-hint-overlay');
           if (overlay && !overlay.classList.contains('shown')) {
+            // Position overlay at current scroll position with viewport width
+            const scrollLeft = container.scrollLeft;
+            const viewportWidth = container.offsetWidth;
+            overlay.style.left = scrollLeft + 'px';
+            overlay.style.width = viewportWidth + 'px';
             overlay.classList.add('active', 'shown');
             // Remove after animation completes
             setTimeout(() => {
               overlay.classList.remove('active');
             }, 2500);
           }
-          observer.unobserve(entry.target);
+          observer.unobserve(container);
         }
       });
     }, {
-      threshold: 0.3
+      threshold: 0.5
     });
 
-    flowcharts.forEach(flowchart => {
-      observer.observe(flowchart);
+    svgContainers.forEach(container => {
+      observer.observe(container);
     });
   }
 

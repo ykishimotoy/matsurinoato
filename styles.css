@@ -527,9 +527,7 @@ ul {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
   background: rgba(245, 245, 245, 0.9);
   z-index: 10;
   justify-content: space-between;
@@ -854,6 +852,10 @@ ul {
 
 .community-info .section-title {
   text-align: center;
+  font-size: 1.25rem;
+  color: var(--black);
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .community-grid {
