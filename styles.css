@@ -548,6 +548,12 @@ ul {
     position: relative;
   }
 
+  .flow-hint {
+    position: sticky;
+    left: 0;
+    width: calc(100vw - 48px);
+  }
+
   .scroll-hint-overlay {
     display: flex;
   }
@@ -880,7 +886,7 @@ ul {
 .community-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #f97316;
+  color: #f97316 !important;
   margin-bottom: 8px;
 }
 
