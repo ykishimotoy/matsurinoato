@@ -150,6 +150,35 @@ ul {
 }
 
 /* ============================================
+   Lookback Notice
+   ============================================ */
+.lookback-notice {
+  padding: 48px 0;
+  background: var(--gray-200);
+  text-align: center;
+}
+
+.lookback-message {
+  font-size: 1.0625rem;
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .lookback-notice {
+    padding: 32px 0;
+  }
+
+  .sp-only {
+    display: inline;
+  }
+}
+
+/* ============================================
    Hero
    ============================================ */
 .hero {
