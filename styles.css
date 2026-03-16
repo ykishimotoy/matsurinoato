@@ -115,6 +115,7 @@ ul {
    Language Nav
    ============================================ */
 .lang-nav {
+  display: none;
   position: absolute;
   top: 24px;
   right: 24px;
